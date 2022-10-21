@@ -24,12 +24,13 @@ python-versions = "*"
 cryptography = ">=3.2"
 
 [[package]]
-name = "automat"
-version = "20.2.0"
+name = "Automat"
+version = "20.2.1.dev37+g4260ebb"
 description = "Self-service finite-state machines for the programmer on the go."
 category = "main"
 optional = false
 python-versions = "*"
+develop = false
 
 [package.dependencies]
 attrs = ">=19.2.0"
@@ -37,6 +38,12 @@ six = "*"
 
 [package.extras]
 visualize = ["Twisted (>=16.1.1)", "graphviz (>0.5.1)"]
+
+[package.source]
+type = "git"
+url = "https://github.com/glyph/automat.git"
+reference = "4260ebbc3347b12566f219fe0e887c18bf972cb9"
+resolved_reference = "4260ebbc3347b12566f219fe0e887c18bf972cb9"
 
 [[package]]
 name = "bcrypt"
@@ -1633,7 +1640,7 @@ url-preview = ["lxml"]
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.7.1"
-content-hash = "9400cb5c92bb4648238f652f5e7f81df51cdcf9b7c69d645f35beaa4acb2f420"
+content-hash = "5411ceaf772a04d2de6f84ce2eae66bb9bd765fbcce2e84813347cad3d60dbd6"
 
 [metadata.files]
 attrs = [
@@ -1644,10 +1651,7 @@ Authlib = [
     {file = "Authlib-1.1.0-py2.py3-none-any.whl", hash = "sha256:be4b6a1dea51122336c210a6945b27a105b9ac572baffd15b07bcff4376c1523"},
     {file = "Authlib-1.1.0.tar.gz", hash = "sha256:0a270c91409fc2b7b0fbee6996e09f2ee3187358762111a9a4225c874b94e891"},
 ]
-automat = [
-    {file = "Automat-20.2.0-py2.py3-none-any.whl", hash = "sha256:b6feb6455337df834f6c9962d6ccf771515b7d939bca142b29c20c2376bc6111"},
-    {file = "Automat-20.2.0.tar.gz", hash = "sha256:7979803c74610e11ef0c0d68a2942b152df52da55336e0c9d58daf1831cbdf33"},
-]
+Automat = []
 bcrypt = [
     {file = "bcrypt-4.0.1-cp36-abi3-macosx_10_10_universal2.whl", hash = "sha256:b1023030aec778185a6c16cf70f359cbb6e0c289fd564a7cfa29e727a1c38f8f"},
     {file = "bcrypt-4.0.1-cp36-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.manylinux_2_24_aarch64.whl", hash = "sha256:08d2947c490093a11416df18043c27abe3921558d2c03e2076ccb28a116cb6d0"},
